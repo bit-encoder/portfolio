@@ -1,0 +1,65 @@
+/* PRE-PROCESSING styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+
+/* HEADER styling */
+header {
+    color: #F3C677;
+    background-color: #0C0A3E;
+    text-align: center;
+    
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* NAV BAR styling */
+nav {
+    background-color: #B33F62;
+
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* ARTICLE styling */
+article {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article ul {
+    padding: 0;
+    list-style: none;
+}
+
+/* FOOTER styling */
+
+hr {
+    width: 960px;
+}
+
+footer {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
