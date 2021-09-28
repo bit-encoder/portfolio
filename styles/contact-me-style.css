@@ -1,0 +1,48 @@
+h3 {
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.table-entry-label {
+    text-align: right;
+}
+
+input[name="contacterName"], input[name="emailAddress"], input[name="telephoneNumber"] {
+    margin-left: 10px;
+}
+
+/**
+    FIELDSET changes
+*/
+fieldset {
+    margin-bottom: 15px;
+    border-color: black;
+}
+
+#basic-info {
+    margin-top: 15px;
+}
+
+#reason-for-contact {
+    display: flex;
+    flex-direction: column;
+
+}
+
+fieldset[id="reason-for-contact"] > label > input{
+    float: left;
+    margin-right: 5px;
+}
+
+#flying-pig-date {
+    margin-bottom: 15px;
+}
+
+#flying-pig-date > input {
+    margin-left: 15px;
+}

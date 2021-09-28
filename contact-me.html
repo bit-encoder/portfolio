@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="styles/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="styles/contact-me-style.css">
 
         <meta charset="utf-8">
         <title>Porfolio</title>
@@ -32,56 +33,68 @@
         <main>
             <section>
                 <h2>Contact Me</h2>
-                <p>Note: I created a separate stylesheet in styles folder for you. See contactMeStyle.css</p>
+                <p>Note: I created a separate stylesheet in styles folder for you. See contact-me-style.css</p>
+                <hr>
+                
                 <article>
-                    <form method="GET">
-                        <label>First Name
-                            <input type="text" name="firstName">
-                        </label>
-
-                        <label>Last Name
-                            <input type="text" name="lastName">
-                        </label>
-
-                        <label>Email
-                            <input type="email" name="emailAddress">
-                        </label>
-
-                        <label>Phone Number
-                            <input type="tel" name="telephoneNumber">
-                        </label>
-
-                        <fieldset>
+                    <h3>Contact Form</h3>
+                    <form class="contact-form" method="GET">
+                        
+                        <fieldset id="basic-info">
+                            <legend>Basic Info</legend>
+                            <table>
+                                <tr>
+                                    <td class="table-entry-label"><label>Your name</label></td>
+                                    <td><input type="text" name="contacterName"></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="table-entry-label"><label>Email</label></td>
+                                    <td><input type="email" name="emailAddress"></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="table-entry-label"><label>Phone Number</label></td>
+                                    <td><input type="tel" name="telephoneNumber"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                            
+                        <fieldset id="reason-for-contact">
                             <legend>Reason for Contacting</legend>
                             
-                            <input type="checkbox" name="reasons[]" id="behind-on-payments">
-                            <label for="behind-on-payments">Behind on payments</label>
+                            <label for="behind-on-payments">Behind on payments
+                                <input type="checkbox" name="reasons[]" id="behind-on-payments">
+                            </label>
                             
-                            <input type="checkbox" name="reasons[]" id="dog-barking">
-                            <label for="dog-barking">Dog barking at odd hours</label>
+                            <label for="dog-barking">Dog barking at odd hours
+                                <input type="checkbox" name="reasons[]" id="dog-barking">
+                            </label>
                             
-                            <input type="checkbox" name="reasons[]" id="laundry">
-                            <label for="laundry">Did not remove laundry from washing machine</label>
+                            <label for="laundry">Did not remove laundry from washing machine
+                                <input type="checkbox" name="reasons[]" id="laundry">
+                            </label>
 
-                            <input type="checkbox" name="reasons[]" id="apology">
-                            <label for="apology">Demand an apology</label>
+                            <label for="apology">Demand an apology
+                                <input type="checkbox" name="reasons[]" id="apology">
+                            </label>
 
                             <p>This fieldset has the name <code>reasons[]</code> to simulate going to server. Just practicing.</p>
                         </fieldset>
 
-                        <fieldset>
+                        <fieldset id="how-are-you-feeling">
                             <legend>How do you feel today?</legend>
-                            <input type="radio" name="feel" value="pretty">
-                            <label for="feel">Pretty</label>
-                            <input type="radio" name="feel" value="oh so pretty">
-                            <label for="feel">Oh so pretty</label>
-                            <input type="radio" name="feel" value="witty">
-                            <label for="feel">Witty</label>
-                            <input type="radio" name="feel" value="gay">
-                            <label for="feel">Gay</label>
+                            <input type="radio" name="feel" value="pretty" id="pretty">
+                            <label for="pretty">Pretty</label>
+                            <input type="radio" name="feel" value="oh-so-pretty" id="oh-so-pretty">
+                            <label for="oh-so-pretty">Oh so pretty</label>
+                            <input type="radio" name="feel" value="witty" id="witty">
+                            <label for="witty">Witty</label>
+                            <input type="radio" name="feel" value="gay" id="gay">
+                            <label for="gay">Gay</label>
                         </fieldset>
 
-                        <label>When do you expect for pigs to fly?
+                        <label id="flying-pig-date">When do you expect for pigs to fly?
                             <input type="date" name="pigFlyDate">
                         </label>
 
