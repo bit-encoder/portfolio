@@ -30,7 +30,65 @@
         </nav>
         
         <main>
+            <section>
+                <h2>Contact Me</h2>
+                <p>Note: I created a separate stylesheet in styles folder for you. See contactMeStyle.css</p>
+                <article>
+                    <form method="GET">
+                        <label>First Name
+                            <input type="text" name="firstName">
+                        </label>
 
+                        <label>Last Name
+                            <input type="text" name="lastName">
+                        </label>
+
+                        <label>Email
+                            <input type="email" name="emailAddress">
+                        </label>
+
+                        <label>Phone Number
+                            <input type="tel" name="telephoneNumber">
+                        </label>
+
+                        <fieldset>
+                            <legend>Reason for Contacting</legend>
+                            
+                            <input type="checkbox" name="reasons[]" id="behind-on-payments">
+                            <label for="behind-on-payments">Behind on payments</label>
+                            
+                            <input type="checkbox" name="reasons[]" id="dog-barking">
+                            <label for="dog-barking">Dog barking at odd hours</label>
+                            
+                            <input type="checkbox" name="reasons[]" id="laundry">
+                            <label for="laundry">Did not remove laundry from washing machine</label>
+
+                            <input type="checkbox" name="reasons[]" id="apology">
+                            <label for="apology">Demand an apology</label>
+
+                            <p>This fieldset has the name <code>reasons[]</code> to simulate going to server. Just practicing.</p>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>How do you feel today?</legend>
+                            <input type="radio" name="feel" value="pretty">
+                            <label for="feel">Pretty</label>
+                            <input type="radio" name="feel" value="oh so pretty">
+                            <label for="feel">Oh so pretty</label>
+                            <input type="radio" name="feel" value="witty">
+                            <label for="feel">Witty</label>
+                            <input type="radio" name="feel" value="gay">
+                            <label for="feel">Gay</label>
+                        </fieldset>
+
+                        <label>When do you expect for pigs to fly?
+                            <input type="date" name="pigFlyDate">
+                        </label>
+
+                        <input type="submit" value="Submit Form"/>
+                    </form>
+                </article>
+            </section>
         </main>
         
         <hr>
